@@ -21,3 +21,15 @@ export default defineConfig(({ mode }) => {
       }
     };
 });
+// ... tus imports actuales
+export default defineConfig(({ mode }) => {
+  const env = loadEnv(mode, '.', '');
+  return {
+    base: '/Horas-Extra/', // <--- AGREGA ESTO (el nombre de tu repo en GitHub)
+    server: {
+      port: 3000,
+      host: '0.0.0.0',
+    },
+    // ... resto de tu configuración (plugins, define, resolve)
+  };
+});
