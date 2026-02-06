@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    <title>Control de Horas Extras</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#00E0FF", // Electric Light Blue
+                        "primary-dark": "#0090bd",
+                        "primary-dim": "rgba(0, 224, 255, 0.15)",
+                        "background-light": "#f1f5f9", // Slate 100
+                        "background-dark": "#0B1121", // Deep Blue/Black
+                        "card-light": "#ffffff",
+                        "card-dark": "#151e32", // Dark Steel Blue
+                        "card-border": "#28344d",
+                        "secondary-text": "#94a3b8", // Slate 400
+                        "surface-dark": "#1e293b",
+                        "border-metallic": "#475569",
+                        "cobalt": {
+                            400: "#60a5fa",
+                            500: "#3b82f6",
+                            600: "#2563eb",
+                            700: "#1d4ed8",
+                        }
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    boxShadow: {
+                        'soft': '0 4px 20px -2px rgba(0, 0, 0, 0.1)',
+                        'glow': '0 0 25px rgba(0, 224, 255, 0.4)',
+                        'glow-blue': '0 0 15px -3px rgba(59, 130, 246, 0.4)',
+                        'metallic': 'inset 0 1px 0 0 rgba(255, 255, 255, 0.05)',
+                    },
+                    backgroundImage: {
+                        'metal-gradient': 'linear-gradient(145deg, #1e293b 0%, #0f172a 100%)',
+                        'blue-metal': 'linear-gradient(135deg, #00C6FF 0%, #0072FF 100%)',
+                        'btn-cobalt': 'linear-gradient(135deg, #3b82f6 0%, #2563eb 50%, #1d4ed8 100%)',
+                    }
+                },
+            },
+        }
+    </script>
+    <style>
+      body {
+        font-family: 'Inter', sans-serif;
+        min-height: 100dvh;
+        /* Disable text selection for app-like feel */
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        user-select: none;
+        /* Remove tap highlight color */
+        -webkit-tap-highlight-color: transparent;
+        /* Ensure background covers the notch area */
+        background-attachment: fixed;
+      }
+
+      /* Re-enable text selection for inputs */
+      input, textarea, select {
+        -webkit-user-select: text;
+        user-select: text;
+      }
+
+      ::-webkit-scrollbar { width: 6px; }
+      ::-webkit-scrollbar-track { background: transparent; }
+      ::-webkit-scrollbar-thumb { background: #334155; border-radius: 3px; }
+      
+      .input-metallic {
+          background: linear-gradient(180deg, rgba(30, 41, 59, 1) 0%, rgba(30, 41, 59, 0.8) 100%);
+      }
+      .glass-card {
+          background: rgba(21, 30, 50, 0.7);
+          backdrop-filter: blur(10px);
+          -webkit-backdrop-filter: blur(10px);
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "lucide-react": "https://esm.sh/lucide-react@^0.563.0",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/"
+  }
+}
+</script>
+</head>
+  <body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-white antialiased selection:bg-primary selection:text-black">
+    <div id="root"></div>
+  </body>
+</html>

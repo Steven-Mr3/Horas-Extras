@@ -1,0 +1,5 @@
+{
+  "name": "Control Horas Extras",
+  "description": "Aplicación para el registro, cálculo y gestión de horas extras y recargos festivos/dominicales de colaboradores.",
+  "requestFramePermissions": []
+}
